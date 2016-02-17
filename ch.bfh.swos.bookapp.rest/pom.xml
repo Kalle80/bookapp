@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>ch.bfh.swos.bookapp</groupId>
+        <artifactId>ch.bfh.swos.bookapp.parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>ch.bfh.swos.bookapp.rest</artifactId>
+    <name>Bookapp REST</name>
+
+    <packaging>war</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>ch.bfh.swos.bookapp</groupId>
+            <artifactId>ch.bfh.swos.bookapp.service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>3.1.4.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.13</version>
+        </dependency>
+
+    </dependencies>
+
+    <profiles>
+      <profile>
+        <id>robot</id>
+        <properties>
+            <robot.include_cli>
+                Smoke,
+                Regression
+            </robot.include_cli>
+        </properties>
+        <build>
+          <plugins>
+            <plugin>
+              <groupId>org.robotframework</groupId>
+              <artifactId>robotframework-maven-plugin</artifactId>
+              <version>1.4.6</version>
+              <executions>
+                <execution>
+                  <goals>
+                    <goal>run</goal>
+                  </goals>
+                </execution>
+              </executions>
+              <configuration>
+                <testCasesDirectory>${project.basedir}/src/main/resources/integration-tests</testCasesDirectory>
+                <extraPathDirectories>
+                  <extraPathDirectory>${project.basedir}/src/test/resources/libraries</extraPathDirectory>
+                </extraPathDirectories>
+                <includes_cli>${robot.include_cli}</includes_cli>
+                <variables_cli>${variable.robot}</variables_cli>
+              </configuration>
+            </plugin>
+          </plugins>
+        </build>
+      </profile>
+    </profiles>
+
+
+</project>

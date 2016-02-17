@@ -1,0 +1,17 @@
+acceptance_testing:
+  dependency: 
+#   - Bookapp JSF[CompileAndUnitTests]
+#   - Bookapp REST[CompileAndUnitTests]
+   - Bookapp JSF[IntegrationTests]
+   - Bookapp REST[IntegrationTests]   
+  compose_file_path: /src/main/resources
+  compose_file_name: docker-compose.yml
+  #test_cmd: echo "HELLOWORLD"
+  test_cmd: mvn -P robot -D variable.robot=SUT_HOST:andonmaster.andonsandbox.pdcloud.int.tieto.com,SUT_PORT:9991 org.robotframework:robotframework-maven-plugin:run 
+
+production:
+  dependency:
+   - Bookapp Acceptance Testing[AcceptanceTestStage]
+  trigger_mode: manual
+  custom_cmd:
+   - docker-compose -f src/main/resources/production/docker-compose.yml up --force-recreate -d

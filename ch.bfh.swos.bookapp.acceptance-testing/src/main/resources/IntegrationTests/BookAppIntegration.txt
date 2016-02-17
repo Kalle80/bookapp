@@ -1,0 +1,69 @@
+*** Settings ***
+#Library                 RequestsLibrary
+Library                 Collections
+Library                 String
+Library                 Selenium2Library    10.0  1.0      #timeout, implicit_wait
+Library                 OperatingSystem
+#Resource                variables.txt
+Suite Setup             Setup Integration
+#Suite Teardown          Delete Connections and stop Environment
+Test Teardown           General Test Teardown
+
+*** Variables ***
+${SUT_HOST}     localhost
+${SUT_PORT}     9991
+${SUT_URL}      http://${SUT_HOST}:${SUT_PORT}
+${DEBUG LEVEL}  1
+
+# Selenium settings
+${SELENIUM_GRID_HOST}   ${SUT_HOST}
+${SELENIUM_GRID_PORT}   4445
+${SELENIUM_GRID_URL}    http://${SELENIUM_GRID_HOST}:${SELENIUM_GRID_PORT}/wd/hub
+${BROWSER}              Chrome
+
+*** Test Cases ***
+Add new Book in BookApp and remove it
+    [Documentation]  Acceptance test cese
+    [Tags]  Smoke
+    Given BookApp is up and running
+    When Book is added
+    Then I can verify the Book information
+    And Remove added Book
+
+*** Keywords ***
+BookApp is up and running
+    Page Should Contain   BookApp
+    Run Keyword If    ${DEBUG LEVEL}==1    Capture Page Screenshot
+
+Book is added
+    Log  Book Added
+    Add the New book with title "The Hobbit, or There and Back Again" and Release Date "21.09.1937" and Author "J.R.R Tolkien"
+
+Add the New book with title "${title}" and Release Date "${date}" and Author "${author}"
+    Input Text  form:releaseDate_input  ${date}
+    Click Element  form:title
+    Input Text  form:title  ${title}
+    Select From List  form:author  ${author}
+    Run Keyword If    ${DEBUG LEVEL}==1    Capture Page Screenshot
+    Click Button  form:save
+
+I can verify the Book information
+#    Reload Page
+#    Go To  ${SUT_URL}/ch.bfh.swos.bookapp.jsf-0.0.1-SNAPSHOT/pages/books.xhtml
+    Click Link  books.xhtml
+    Run Keyword If    ${DEBUG LEVEL}==1    Capture Page Screenshot
+    Page Should Contain   The Hobbit, or There and Back Again
+    Page Should Contain   21.09.1937
+    Page Should Contain   J.R.R Tolkien   
+
+Remove added Book
+    Click Button  list:table:2:delete
+    Page Should Not Contain   The Hobbit, or There and Back Again
+
+General Test Teardown
+    Log  Teardown
+
+Setup Integration
+    Open Browser  ${SUT_URL}/ch.bfh.swos.bookapp.jsf-0.0.1-SNAPSHOT/pages/books.xhtml  ${BROWSER}  ${EMPTY}  ${SELENIUM_GRID_URL}
+    Page Should Contain   BookApp
+
