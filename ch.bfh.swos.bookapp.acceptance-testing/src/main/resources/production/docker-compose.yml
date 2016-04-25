@@ -4,16 +4,8 @@ services:
     image: bookapp_jsf:latest
     ports:
       - "9995:8080"
-    networks:
-      - bookapp-network
 
   bookapprest:
     image: bookapp_rest:latest
     ports:
       - "9996:8080"
-    networks:
-      - bookapp-network     
-
-networks:
-  bookapp-network:      
-

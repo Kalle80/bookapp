@@ -1,5 +1,0 @@
-bookappjsf:
-  image: bookapp_jsf:latest
-  ports:
-   - "9124:8080"
-   

@@ -4,14 +4,20 @@ acceptance_testing:
 #   - Bookapp REST[CompileAndUnitTests]
    - Bookapp JSF[IntegrationTests]
    - Bookapp REST[IntegrationTests]   
-  compose_file_path: /src/main/resources
+  compose_file_path: /src/test/resources
   compose_file_name: docker-compose.yml
   #test_cmd: echo "HELLOWORLD"
-  test_cmd: mvn -P robot -D variable.robot=SUT_HOST:andonmaster.andonsandbox.pdcloud.int.tieto.com,SUT_PORT:9991 org.robotframework:robotframework-maven-plugin:run 
-
+  test_cmd: mvn -P robot -D variable.robot=SUT_HOST:bookappjsf_acceptance,SUT_PORT:8080 org.robotframework:robotframework-maven-plugin:run 
+  service_virtualization: 
+    mari_file_name: bookapprest.mari
+    mari_file_path: src/test/resources/service-virtualization/VirtualServices
 production:
   dependency:
    - Bookapp Acceptance Testing[AcceptanceTestStage]
   trigger_mode: manual
   custom_cmd:
-   - docker-compose -f src/main/resources/production/docker-compose.yml up --force-recreate -d
+#   - sudo docker-compose -f src/main/resources/production/docker-compose.yml up --force-recreate -d
+    - sudo docker rm -f bookapp_rest
+    - sudo docker rm -f bookapp_jsf
+    - sudo docker run -d -p 9995:8080 --name=bookapp_rest bookapp_rest
+    - sudo docker run -d -p 9996:8080 --name=bookapp_jsf --link=bookapp_rest bookapp_jsf

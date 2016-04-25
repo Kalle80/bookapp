@@ -4,3 +4,4 @@ compile_and_unit_tests:
   go_cd_agent_props:
     - java
     - maven
+  sonarqube: true

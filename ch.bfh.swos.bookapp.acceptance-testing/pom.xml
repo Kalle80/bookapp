@@ -59,7 +59,7 @@
                 </dependency>
               </dependencies>
               <configuration>
-                <testCasesDirectory>${project.basedir}/src/main/resources/IntegrationTests</testCasesDirectory>
+                <testCasesDirectory>${project.basedir}/src/test/resources/IntegrationTests</testCasesDirectory>
                 <includes_cli>${robot.include_cli}</includes_cli>
                 <variables_cli>${variable.robot}</variables_cli>
                 <dryrun>false</dryrun>

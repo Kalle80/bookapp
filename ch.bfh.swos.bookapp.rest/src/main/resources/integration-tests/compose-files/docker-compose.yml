@@ -1,5 +1,0 @@
-bookapprest:
-  image: bookapp_rest:latest
-  ports:
-   - "9123:8080"
-   

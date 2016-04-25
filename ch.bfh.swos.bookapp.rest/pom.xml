@@ -57,7 +57,7 @@
                 </execution>
               </executions>
               <configuration>
-                <testCasesDirectory>${project.basedir}/src/main/resources/integration-tests</testCasesDirectory>
+                <testCasesDirectory>${project.basedir}/src/test/resources/integration-tests</testCasesDirectory>
                 <extraPathDirectories>
                   <extraPathDirectory>${project.basedir}/src/test/resources/libraries</extraPathDirectory>
                 </extraPathDirectories>
