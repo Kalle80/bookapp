@@ -8,9 +8,27 @@ acceptance_testing:
   compose_file_name: docker-compose.yml
   #test_cmd: echo "HELLOWORLD"
   test_cmd: mvn -P robot -D variable.robot=SUT_HOST:bookappjsf_acceptance,SUT_PORT:8080 org.robotframework:robotframework-maven-plugin:run 
+
+  selenium_grid:
+    commands:
+      - cmd: 
+        - mvn -P robot -D variable.robot=SUT_HOST:bookappjsf_acceptance,SUT_PORT:8080,BROWSER=chrome org.robotframework:robotframework-maven-plugin:run
+        type: paraller
+      - cmd:
+        - mvn -P robot -D variable.robot=SUT_HOST:bookappjsf_acceptance,SUT_PORT:8080,BROWSER=firefox org.robotframework:robotframework-maven-plugin:run
+        type: paraller
+    browsers: 
+      - name: chrome 
+        amount: 2
+        version: "latest"
+      - name: firefox 
+        amount: 2
+        version: "latest"
+
   service_virtualization: 
     mari_file_name: bookapprest.mari
     mari_file_path: src/test/resources/service-virtualization/VirtualServices
+  
 production:
   dependency:
    - Bookapp Acceptance Testing[AcceptanceTestStage]
