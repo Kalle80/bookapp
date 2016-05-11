@@ -15,7 +15,7 @@ acceptance_testing:
         - mvn -P robot -D variable.robot=SUT_HOST:bookappjsf_acceptance,SUT_PORT:8080,BROWSER=chrome org.robotframework:robotframework-maven-plugin:run
         type: paraller
       - cmd:
-        - mvn -P robot -D variable.robot=SUT_HOST:bookappjsf_acceptance,SUT_PORT:8080,BROWSER=firefox org.robotframework:robotframework-maven-plugin:run
+        - mvn -P robot -D variable.robot=SUT_HOST:bookappjsf_acceptance,SUT_PORT:8080,BROWSER=chrome org.robotframework:robotframework-maven-plugin:run
         type: paraller
     browsers: 
       - name: chrome 
