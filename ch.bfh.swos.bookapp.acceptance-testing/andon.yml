@@ -1,12 +1,9 @@
 acceptance_testing:
   dependency: 
-#   - Bookapp JSF[CompileAndUnitTests]
-#   - Bookapp REST[CompileAndUnitTests]
    - Bookapp JSF[IntegrationTests]
    - Bookapp REST[IntegrationTests]   
   compose_file_path: /src/test/resources
   compose_file_name: docker-compose.yml
-  #test_cmd: echo "HELLOWORLD"
   test_cmd: mvn -P robot -D variable.robot=SUT_HOST:bookappjsf_acceptance,SUT_PORT:8080 org.robotframework:robotframework-maven-plugin:run 
 
   selenium_grid:
@@ -37,5 +34,5 @@ production:
 #   - sudo docker-compose -f src/main/resources/production/docker-compose.yml up --force-recreate -d
     - sudo docker rm -f bookapp_rest
     - sudo docker rm -f bookapp_jsf
-    - sudo docker run -d -p 9995:8080 --name=bookapp_rest bookapp_rest
-    - sudo docker run -d -p 9996:8080 --name=bookapp_jsf --link=bookapp_rest bookapp_jsf
+    - sudo docker run -d -p 81:8080 --name=bookapp_rest bookapp_rest
+    - sudo docker run -d -p 8081:8080 --name=bookapp_jsf bookapp_jsf 
