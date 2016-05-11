@@ -17,3 +17,25 @@ integration_testing:
   compose_file_path: /src/test/resources/integration-tests/compose-files
   compose_file_name: docker-compose.yml
   test_cmd: mvn -P robot -D variable.robot=SUT_HOST:andonmaster.andonsandbox.pdcloud.int.tieto.com,SUT_PORT:9123 org.robotframework:robotframework-maven-plugin:run 
+  selenium_grid:
+    commands:
+      - cmd: 
+         - true
+         - true
+      - cmd: 
+        - true
+        - true
+        type: paraller
+      - cmd:
+        - true
+        type: paraller
+      - cmd: 
+        - true
+        - true
+        - true
+        - true
+        - true
+    browsers: 
+      - name: chrome 
+        amount: 2
+        version: "latest"
