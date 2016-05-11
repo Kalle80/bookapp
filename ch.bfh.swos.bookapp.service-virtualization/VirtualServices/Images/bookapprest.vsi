@@ -1,0 +1,403 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="37" name="bookapprest" created="2016-03-19.10:57:35.509" lastModified="2016-02-19.12:30:05.321" version="9.1.0" buildNumber="9.1.0.399">
+<st>
+<t id="24" nd="true">
+<sp>
+<t id="45">
+<rq id="46" op="GET /ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/authors" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT</p>
+<p n="HTTP-Segment-Attr-1">rest</p>
+<p n="HTTP-Segment-Attr-2">authors</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/authors</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Host">trustedregistry.andonsandbox.pdcloud.int.tieto.com:9992</p>
+<p n="Accept">application/json, text/plain, */*</p>
+<p n="X-Requested-With">XMLHttpRequest</p>
+<p n="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36</p>
+<p n="Referer">http://localhost:9000/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/</p>
+<p n="Accept-Encoding">gzip, deflate, sdch</p>
+<p n="Accept-Language">en-US,en;q=0.8,fi;q=0.6</p>
+<p n="Cookie">locale=en; http%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Ftheme=%7B%22state%22%3A%7B%22id%22%3A%22s%3Agray%22%2C%20%22file%22%3A%22s%3Ahttp%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Fgxt%2Fcss%2Fgxt-gray.css%22%7D%7D; userName=%7B%22state%22%3A%7B%22USER_NAME%22%3A%22s%3Aadmin%22%7D%7D; JSESSIONID=85a8l9w57nohoe8pavz2p78q</p>
+</m>
+</rq>
+<rs>
+<rp id="47" t="198">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Jetty(9.3.2.v20150730)</p>
+</m>
+<bd chs="UTF-8">[{&quot;id&quot;:1,&quot;firstname&quot;:&quot;J.R.R&quot;,&quot;lastname&quot;:&quot;Tolkien&quot;},{&quot;id&quot;:2,&quot;firstname&quot;:&quot;Stephen&quot;,&quot;lastname&quot;:&quot;King&quot;}]</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="48" op="GET /ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/authors" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT</p>
+<p n="HTTP-Segment-Attr-1">rest</p>
+<p n="HTTP-Segment-Attr-2">authors</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/authors</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Host">trustedregistry.andonsandbox.pdcloud.int.tieto.com:9992</p>
+<p n="Accept">application/json, text/plain, */*</p>
+<p n="X-Requested-With">XMLHttpRequest</p>
+<p n="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36</p>
+<p n="Referer">http://localhost:9000/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/</p>
+<p n="Accept-Encoding">gzip, deflate, sdch</p>
+<p n="Accept-Language">en-US,en;q=0.8,fi;q=0.6</p>
+<p n="Cookie">locale=en; http%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Ftheme=%7B%22state%22%3A%7B%22id%22%3A%22s%3Agray%22%2C%20%22file%22%3A%22s%3Ahttp%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Fgxt%2Fcss%2Fgxt-gray.css%22%7D%7D; userName=%7B%22state%22%3A%7B%22USER_NAME%22%3A%22s%3Aadmin%22%7D%7D; JSESSIONID=85a8l9w57nohoe8pavz2p78q</p>
+</m>
+</rq>
+<rs>
+<rp id="49" t="198">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Jetty(9.3.2.v20150730)</p>
+</m>
+<bd chs="UTF-8">[{&quot;id&quot;:1,&quot;firstname&quot;:&quot;J.R.R&quot;,&quot;lastname&quot;:&quot;Tolkien&quot;},{&quot;id&quot;:2,&quot;firstname&quot;:&quot;Stephen&quot;,&quot;lastname&quot;:&quot;King&quot;}]</bd>
+</rp>
+</rs>
+</t>
+<t id="25" nd="true">
+<sp>
+<t id="50">
+<rq id="51" op="POST /ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/authors" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT</p>
+<p n="HTTP-Segment-Attr-1">rest</p>
+<p n="HTTP-Segment-Attr-2">authors</p>
+<p n="recorded_raw_request_bytes">eyJmaXJzdG5hbWUiOiJMaXNhIiwibGFzdG5hbWUiOiJDcmlzcGluIn0=</p>
+<p n="recorded_raw_request">{&quot;firstname&quot;:&quot;Lisa&quot;,&quot;lastname&quot;:&quot;Crispin&quot;}</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/authors</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Host">trustedregistry.andonsandbox.pdcloud.int.tieto.com:9992</p>
+<p n="Content-Length">41</p>
+<p n="Accept">application/json, text/plain, */*</p>
+<p n="Origin">http://localhost:9000</p>
+<p n="X-Requested-With">XMLHttpRequest</p>
+<p n="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Referer">http://localhost:9000/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/</p>
+<p n="Accept-Encoding">gzip, deflate</p>
+<p n="Accept-Language">en-US,en;q=0.8,fi;q=0.6</p>
+<p n="Cookie">locale=en; http%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Ftheme=%7B%22state%22%3A%7B%22id%22%3A%22s%3Agray%22%2C%20%22file%22%3A%22s%3Ahttp%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Fgxt%2Fcss%2Fgxt-gray.css%22%7D%7D; userName=%7B%22state%22%3A%7B%22USER_NAME%22%3A%22s%3Aadmin%22%7D%7D; JSESSIONID=85a8l9w57nohoe8pavz2p78q</p>
+</m>
+<bd chs="UTF-8">{&quot;firstname&quot;:&quot;Lisa&quot;,&quot;lastname&quot;:&quot;Crispin&quot;}</bd>
+</rq>
+<rs>
+<rp id="52" t="261">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Jetty(9.3.2.v20150730)</p>
+</m>
+<bd chs="UTF-8">{&quot;id&quot;:3,&quot;firstname&quot;:&quot;Lisa&quot;,&quot;lastname&quot;:&quot;Crispin&quot;}</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="53" op="POST /ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/authors" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT</p>
+<p n="HTTP-Segment-Attr-1">rest</p>
+<p n="HTTP-Segment-Attr-2">authors</p>
+<p n="recorded_raw_request_bytes">eyJmaXJzdG5hbWUiOiJMaXNhIiwibGFzdG5hbWUiOiJDcmlzcGluIn0=</p>
+<p n="recorded_raw_request">{&quot;firstname&quot;:&quot;Lisa&quot;,&quot;lastname&quot;:&quot;Crispin&quot;}</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/authors</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Host">trustedregistry.andonsandbox.pdcloud.int.tieto.com:9992</p>
+<p n="Content-Length">41</p>
+<p n="Accept">application/json, text/plain, */*</p>
+<p n="Origin">http://localhost:9000</p>
+<p n="X-Requested-With">XMLHttpRequest</p>
+<p n="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Referer">http://localhost:9000/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/</p>
+<p n="Accept-Encoding">gzip, deflate</p>
+<p n="Accept-Language">en-US,en;q=0.8,fi;q=0.6</p>
+<p n="Cookie">locale=en; http%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Ftheme=%7B%22state%22%3A%7B%22id%22%3A%22s%3Agray%22%2C%20%22file%22%3A%22s%3Ahttp%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Fgxt%2Fcss%2Fgxt-gray.css%22%7D%7D; userName=%7B%22state%22%3A%7B%22USER_NAME%22%3A%22s%3Aadmin%22%7D%7D; JSESSIONID=85a8l9w57nohoe8pavz2p78q</p>
+</m>
+<bd chs="UTF-8">{&quot;firstname&quot;:&quot;Lisa&quot;,&quot;lastname&quot;:&quot;Crispin&quot;}</bd>
+</rq>
+<rs>
+<rp id="54" t="261">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Jetty(9.3.2.v20150730)</p>
+</m>
+<bd chs="UTF-8">{&quot;id&quot;:3,&quot;firstname&quot;:&quot;Lisa&quot;,&quot;lastname&quot;:&quot;Crispin&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="26" nd="true">
+<sp>
+<t id="55">
+<rq id="56" op="GET /ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/books" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT</p>
+<p n="HTTP-Segment-Attr-1">rest</p>
+<p n="HTTP-Segment-Attr-2">books</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/books</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Host">trustedregistry.andonsandbox.pdcloud.int.tieto.com:9992</p>
+<p n="Accept">application/json, text/plain, */*</p>
+<p n="X-Requested-With">XMLHttpRequest</p>
+<p n="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36</p>
+<p n="Referer">http://localhost:9000/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/</p>
+<p n="Accept-Encoding">gzip, deflate, sdch</p>
+<p n="Accept-Language">en-US,en;q=0.8,fi;q=0.6</p>
+<p n="Cookie">locale=en; http%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Ftheme=%7B%22state%22%3A%7B%22id%22%3A%22s%3Agray%22%2C%20%22file%22%3A%22s%3Ahttp%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Fgxt%2Fcss%2Fgxt-gray.css%22%7D%7D; userName=%7B%22state%22%3A%7B%22USER_NAME%22%3A%22s%3Aadmin%22%7D%7D; JSESSIONID=85a8l9w57nohoe8pavz2p78q</p>
+</m>
+</rq>
+<rs>
+<rp id="57" t="210">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Jetty(9.3.2.v20150730)</p>
+</m>
+<bd chs="UTF-8">[{&quot;id&quot;:1,&quot;title&quot;:&quot;Lord of the Rings - Fellowship of the Ring&quot;,&quot;releaseDate&quot;:1364774400000,&quot;author&quot;:{&quot;id&quot;:1,&quot;firstname&quot;:&quot;J.R.R&quot;,&quot;lastname&quot;:&quot;Tolkien&quot;}},{&quot;id&quot;:2,&quot;title&quot;:&quot;Lord of the Rings - Return of the King&quot;,&quot;releaseDate&quot;:1297728000000,&quot;author&quot;:{&quot;id&quot;:1,&quot;firstname&quot;:&quot;J.R.R&quot;,&quot;lastname&quot;:&quot;Tolkien&quot;}},{&quot;id&quot;:3,&quot;title&quot;:&quot;Agile Testing&quot;,&quot;releaseDate&quot;:1455875469427,&quot;author&quot;:{&quot;id&quot;:2,&quot;firstname&quot;:&quot;Stephen&quot;,&quot;lastname&quot;:&quot;King&quot;}}]</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="58" op="GET /ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/books" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT</p>
+<p n="HTTP-Segment-Attr-1">rest</p>
+<p n="HTTP-Segment-Attr-2">books</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/books</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Host">trustedregistry.andonsandbox.pdcloud.int.tieto.com:9992</p>
+<p n="Accept">application/json, text/plain, */*</p>
+<p n="X-Requested-With">XMLHttpRequest</p>
+<p n="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36</p>
+<p n="Referer">http://localhost:9000/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/</p>
+<p n="Accept-Encoding">gzip, deflate, sdch</p>
+<p n="Accept-Language">en-US,en;q=0.8,fi;q=0.6</p>
+<p n="Cookie">locale=en; http%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Ftheme=%7B%22state%22%3A%7B%22id%22%3A%22s%3Agray%22%2C%20%22file%22%3A%22s%3Ahttp%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Fgxt%2Fcss%2Fgxt-gray.css%22%7D%7D; userName=%7B%22state%22%3A%7B%22USER_NAME%22%3A%22s%3Aadmin%22%7D%7D; JSESSIONID=85a8l9w57nohoe8pavz2p78q</p>
+</m>
+</rq>
+<rs>
+<rp id="59" t="210">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Jetty(9.3.2.v20150730)</p>
+</m>
+<bd chs="UTF-8">[{&quot;id&quot;:1,&quot;title&quot;:&quot;Lord of the Rings - Fellowship of the Ring&quot;,&quot;releaseDate&quot;:1364774400000,&quot;author&quot;:{&quot;id&quot;:1,&quot;firstname&quot;:&quot;J.R.R&quot;,&quot;lastname&quot;:&quot;Tolkien&quot;}},{&quot;id&quot;:2,&quot;title&quot;:&quot;Lord of the Rings - Return of the King&quot;,&quot;releaseDate&quot;:1297728000000,&quot;author&quot;:{&quot;id&quot;:1,&quot;firstname&quot;:&quot;J.R.R&quot;,&quot;lastname&quot;:&quot;Tolkien&quot;}}]</bd>
+</rp>
+</rs>
+</t>
+<t id="36" nd="true">
+<sp>
+<t id="70">
+<rq id="71" op="POST /ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/books" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT</p>
+<p n="HTTP-Segment-Attr-1">rest</p>
+<p n="HTTP-Segment-Attr-2">books</p>
+<p n="recorded_raw_request_bytes">eyJyZWxlYXNlRGF0ZSI6IjIwMTYtMDItMTlUMTA6MjE6MzUuNDY2WiIsInRpdGxlIjoiQWdpbGUgVGVzdGluZyIsImF1dGhvciI6eyJpZCI6MywiZmlyc3RuYW1lIjoiTGlzYSIsImxhc3RuYW1lIjoiQ3Jpc3BpbiJ9fQ==</p>
+<p n="recorded_raw_request">{&quot;releaseDate&quot;:&quot;2016-02-19T10:21:35.466Z&quot;,&quot;title&quot;:&quot;Agile Testing&quot;,&quot;author&quot;:{&quot;id&quot;:3,&quot;firstname&quot;:&quot;Lisa&quot;,&quot;lastname&quot;:&quot;Crispin&quot;}}</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/books</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Host">trustedregistry.andonsandbox.pdcloud.int.tieto.com:9992</p>
+<p n="Content-Length">124</p>
+<p n="Accept">application/json, text/plain, */*</p>
+<p n="Origin">http://localhost:9000</p>
+<p n="X-Requested-With">XMLHttpRequest</p>
+<p n="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Referer">http://localhost:9000/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/</p>
+<p n="Accept-Encoding">gzip, deflate</p>
+<p n="Accept-Language">en-US,en;q=0.8,fi;q=0.6</p>
+<p n="Cookie">locale=en; http%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Ftheme=%7B%22state%22%3A%7B%22id%22%3A%22s%3Agray%22%2C%20%22file%22%3A%22s%3Ahttp%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Fgxt%2Fcss%2Fgxt-gray.css%22%7D%7D; userName=%7B%22state%22%3A%7B%22USER_NAME%22%3A%22s%3Aadmin%22%7D%7D; JSESSIONID=85a8l9w57nohoe8pavz2p78q</p>
+</m>
+<bd chs="UTF-8">{&quot;releaseDate&quot;:&quot;2016-02-19T10:21:35.466Z&quot;,&quot;title&quot;:&quot;Agile Testing&quot;,&quot;author&quot;:{&quot;id&quot;:3,&quot;firstname&quot;:&quot;Lisa&quot;,&quot;lastname&quot;:&quot;Crispin&quot;}}</bd>
+</rq>
+<rs>
+<rp id="72" t="349">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Jetty(9.3.2.v20150730)</p>
+</m>
+<bd chs="UTF-8">{&quot;id&quot;:4,&quot;title&quot;:&quot;Agile Testing&quot;,&quot;releaseDate&quot;:1455877295466,&quot;author&quot;:{&quot;id&quot;:3,&quot;firstname&quot;:&quot;Lisa&quot;,&quot;lastname&quot;:&quot;Crispin&quot;}}</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="73" op="POST /ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/books" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT</p>
+<p n="HTTP-Segment-Attr-1">rest</p>
+<p n="HTTP-Segment-Attr-2">books</p>
+<p n="recorded_raw_request_bytes">eyJyZWxlYXNlRGF0ZSI6IjIwMTYtMDItMTlUMTA6MjE6MzUuNDY2WiIsInRpdGxlIjoiQWdpbGUgVGVzdGluZyIsImF1dGhvciI6eyJpZCI6MywiZmlyc3RuYW1lIjoiTGlzYSIsImxhc3RuYW1lIjoiQ3Jpc3BpbiJ9fQ==</p>
+<p n="recorded_raw_request">{&quot;releaseDate&quot;:&quot;2016-02-19T10:21:35.466Z&quot;,&quot;title&quot;:&quot;Agile Testing&quot;,&quot;author&quot;:{&quot;id&quot;:3,&quot;firstname&quot;:&quot;Lisa&quot;,&quot;lastname&quot;:&quot;Crispin&quot;}}</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/books</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Host">trustedregistry.andonsandbox.pdcloud.int.tieto.com:9992</p>
+<p n="Content-Length">124</p>
+<p n="Accept">application/json, text/plain, */*</p>
+<p n="Origin">http://localhost:9000</p>
+<p n="X-Requested-With">XMLHttpRequest</p>
+<p n="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Referer">http://localhost:9000/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/</p>
+<p n="Accept-Encoding">gzip, deflate</p>
+<p n="Accept-Language">en-US,en;q=0.8,fi;q=0.6</p>
+<p n="Cookie">locale=en; http%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Ftheme=%7B%22state%22%3A%7B%22id%22%3A%22s%3Agray%22%2C%20%22file%22%3A%22s%3Ahttp%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Fgxt%2Fcss%2Fgxt-gray.css%22%7D%7D; userName=%7B%22state%22%3A%7B%22USER_NAME%22%3A%22s%3Aadmin%22%7D%7D; JSESSIONID=85a8l9w57nohoe8pavz2p78q</p>
+</m>
+<bd chs="UTF-8">{&quot;releaseDate&quot;:&quot;2016-02-19T10:21:35.466Z&quot;,&quot;title&quot;:&quot;Agile Testing&quot;,&quot;author&quot;:{&quot;id&quot;:3,&quot;firstname&quot;:&quot;Lisa&quot;,&quot;lastname&quot;:&quot;Crispin&quot;}}</bd>
+</rq>
+<rs>
+<rp id="74" t="349">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Jetty(9.3.2.v20150730)</p>
+</m>
+<bd chs="UTF-8">{&quot;id&quot;:3,&quot;title&quot;:&quot;Agile Testing&quot;,&quot;releaseDate&quot;:1455877295466,&quot;author&quot;:{&quot;id&quot;:3,&quot;firstname&quot;:&quot;Lisa&quot;,&quot;lastname&quot;:&quot;Crispin&quot;}}</bd>
+</rp>
+</rs>
+</t>
+<t id="31" nd="true">
+<sp>
+<t id="65">
+<rq id="66" op="DELETE /ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/books/3" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT</p>
+<p n="HTTP-Segment-Attr-1">rest</p>
+<p n="HTTP-Segment-Attr-2">books</p>
+<p n="HTTP-Segment-Attr-3">3</p>
+</at>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-URI">/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/books/3</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Host">trustedregistry.andonsandbox.pdcloud.int.tieto.com:9992</p>
+<p n="Content-Length">0</p>
+<p n="Accept">application/json, text/plain, */*</p>
+<p n="Origin">http://localhost:9000</p>
+<p n="X-Requested-With">XMLHttpRequest</p>
+<p n="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36</p>
+<p n="Content-Type">text/plain;charset=UTF-8</p>
+<p n="Referer">http://localhost:9000/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/</p>
+<p n="Accept-Encoding">gzip, deflate, sdch</p>
+<p n="Accept-Language">en-US,en;q=0.8,fi;q=0.6</p>
+<p n="Cookie">locale=en; http%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Ftheme=%7B%22state%22%3A%7B%22id%22%3A%22s%3Agray%22%2C%20%22file%22%3A%22s%3Ahttp%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Fgxt%2Fcss%2Fgxt-gray.css%22%7D%7D; userName=%7B%22state%22%3A%7B%22USER_NAME%22%3A%22s%3Aadmin%22%7D%7D; JSESSIONID=85a8l9w57nohoe8pavz2p78q</p>
+</m>
+</rq>
+<rs>
+<rp id="67" t="230">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Length">0</p>
+<p n="Server">Jetty(9.3.2.v20150730)</p>
+</m>
+<bd bin="true" chs="UTF-8"></bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="68" op="DELETE /ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/books/3" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT</p>
+<p n="HTTP-Segment-Attr-1">rest</p>
+<p n="HTTP-Segment-Attr-2">books</p>
+<p n="HTTP-Segment-Attr-3">3</p>
+</at>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-URI">/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/rest/books/3</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Host">trustedregistry.andonsandbox.pdcloud.int.tieto.com:9992</p>
+<p n="Content-Length">0</p>
+<p n="Accept">application/json, text/plain, */*</p>
+<p n="Origin">http://localhost:9000</p>
+<p n="X-Requested-With">XMLHttpRequest</p>
+<p n="User-Agent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36</p>
+<p n="Content-Type">text/plain;charset=UTF-8</p>
+<p n="Referer">http://localhost:9000/ch.bfh.swos.bookapp.rest-0.0.1-SNAPSHOT/</p>
+<p n="Accept-Encoding">gzip, deflate, sdch</p>
+<p n="Accept-Language">en-US,en;q=0.8,fi;q=0.6</p>
+<p n="Cookie">locale=en; http%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Ftheme=%7B%22state%22%3A%7B%22id%22%3A%22s%3Agray%22%2C%20%22file%22%3A%22s%3Ahttp%3A%2F%2Flocalhost%3A1505%2Flisaconsole%2Fgxt%2Fcss%2Fgxt-gray.css%22%7D%7D; userName=%7B%22state%22%3A%7B%22USER_NAME%22%3A%22s%3Aadmin%22%7D%7D; JSESSIONID=85a8l9w57nohoe8pavz2p78q</p>
+</m>
+</rq>
+<rs>
+<rp id="69" t="230">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Length">0</p>
+<p n="Server">Jetty(9.3.2.v20150730)</p>
+</m>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="39" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/xml</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#10;  &lt;S:Body&gt;&#10;    &lt;S:Fault xmlns:ns3=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&#10;      &lt;faultcode&gt;S:Server&lt;/faultcode&gt;&#10;      &lt;faultstring&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/faultstring&gt;&#10;      &lt;detail&gt;&#10;        &lt;ns2:exception xmlns:ns2=&quot;http://jax-ws.dev.java.net/&quot; class=&quot;java.lang.Exception&quot;&gt;&#10;          &lt;message&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/message&gt;&#10;          &lt;ns2:stackTrace&gt;&#10;          &lt;/ns2:stackTrace&gt;&#10;        &lt;/ns2:exception&gt;&#10;      &lt;/detail&gt;&#10;    &lt;/S:Fault&gt;&#10;  &lt;/S:Body&gt;&#10;&lt;/S:Envelope&gt;&#10;&#10;</bd>
+</rp>
+</ucrr>
+<usrr>
+<rp id="38" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/xml</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#10;  &lt;S:Body&gt;&#10;    &lt;S:Fault xmlns:ns3=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&#10;      &lt;faultcode&gt;S:Server&lt;/faultcode&gt;&#10;      &lt;faultstring&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/faultstring&gt;&#10;      &lt;detail&gt;&#10;        &lt;ns2:exception xmlns:ns2=&quot;http://jax-ws.dev.java.net/&quot; class=&quot;java.lang.Exception&quot;&gt;&#10;          &lt;message&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/message&gt;&#10;          &lt;ns2:stackTrace&gt;&#10;          &lt;/ns2:stackTrace&gt;&#10;        &lt;/ns2:exception&gt;&#10;      &lt;/detail&gt;&#10;    &lt;/S:Fault&gt;&#10;  &lt;/S:Body&gt;&#10;&lt;/S:Envelope&gt;&#10;&#10;</bd>
+</rp>
+</usrr>
+</serviceImage>

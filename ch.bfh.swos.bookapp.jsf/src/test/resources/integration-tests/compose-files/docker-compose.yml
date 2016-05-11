@@ -1,0 +1,7 @@
+version: '2'
+services:
+  bookappjsf:
+    image: bookapp_jsf:latest
+    ports:
+     - "9124:8080"
+   

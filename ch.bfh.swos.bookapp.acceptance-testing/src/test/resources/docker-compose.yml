@@ -1,0 +1,11 @@
+version: '2'
+services:
+  bookappjsf_acceptance:
+    image: bookapp_jsf:latest
+    expose:
+     - "8080"
+
+  bookapprest_acceptance:
+    image: bookapp_rest:latest
+    expose:
+     - "8080"

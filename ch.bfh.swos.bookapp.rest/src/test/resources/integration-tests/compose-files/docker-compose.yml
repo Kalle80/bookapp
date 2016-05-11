@@ -1,0 +1,4 @@
+version: '2'
+services:
+  bookapprest:
+    image: bookapp_rest:latest 
